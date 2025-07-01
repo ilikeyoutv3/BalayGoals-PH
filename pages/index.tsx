@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import { Button } from './components/ui/button';
-import { Card, CardContent } from './components/ui/card';
+import { Button } from '../components/ui/button';
+import { Card, CardContent } from '../components/ui/card';
 import { Instagram, Facebook, Twitter } from 'lucide-react';
 
 export default function Home() {
