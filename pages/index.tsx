@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-indigo-100 text-gray-800">
+    <main className="min-h-screen bg-gradient-to-br from-sky-50 via-slate-50 to-indigo-100 text-gray-800">
       <Head>
         <title>BalayGoals PH | Find Your Dream Home</title>
         <meta name="description" content="BalayGoals PH is your gateway to affordable and premium real estate properties across the Philippines." />
@@ -18,14 +18,14 @@ export default function Home() {
       {/* 🎯 Hero Section with Background Image */}
       <section className="relative h-[90vh] flex items-center justify-center text-center text-white">
         <Image
-          src="/images/hero-real-estate.jpg" // replace with actual image in public/images
+          src="/images/hero-real-estate.jpg"
           alt="BalayGoals Background"
           layout="fill"
           objectFit="cover"
           objectPosition="center"
           className="z-0"
         />
-        <div className="absolute inset-0 bg-black/40 z-10" />
+        <div className="absolute inset-0 bg-black/50 z-10" />
         <div className="z-20 p-6">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
             Welcome to <span className="text-indigo-300">BalayGoals PH</span>
@@ -39,9 +39,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 p-10 bg-white">
+      {/* 🏙️ City Property Listings */}
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 p-10 bg-gradient-to-r from-slate-50 via-indigo-50 to-white">
         {['Metro Manila', 'Cebu City', 'Davao'].map((location) => (
-          <Card key={location} className="hover:shadow-2xl transition duration-300">
+          <Card key={location} className="hover:shadow-2xl transition duration-300 bg-white bg-opacity-70 backdrop-blur-md">
             <CardContent className="p-6">
               <h2 className="text-2xl font-semibold text-indigo-700 mb-2">Homes in {location}</h2>
               <p className="text-gray-600">Explore beautiful and affordable properties in {location} with prime amenities and peaceful communities.</p>
@@ -50,8 +51,8 @@ export default function Home() {
         ))}
       </section>
 
-      {/* 🔥 Featured Project Section */}
-      <section className="py-16 bg-gradient-to-br from-white via-indigo-50 to-white px-4 md:px-16">
+      {/* 🌟 Featured Preselling Condo Project */}
+      <section className="py-16 bg-gradient-to-br from-slate-50 via-sky-50 to-white px-4 md:px-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-indigo-700 mb-10">
             🎉 Inviting Investors! – Preselling Stage 🎉
@@ -59,7 +60,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <Image
-              src="/images/4.jpeg" // fixed typo from .jepg to .jpg
+              src="/images/4.jpeg"
               alt="Downtowne Premier Residences"
               width={600}
               height={400}
@@ -92,14 +93,14 @@ export default function Home() {
 
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
             <Image
-              src="/images/downtowne-interior.jpg"
+              src="/images/7.jpeg"
               alt="Unit Interior"
               width={600}
               height={400}
               className="rounded-xl shadow-md object-cover w-full"
             />
             <Image
-              src="/images/downtowne-location-map.jpg"
+              src="/images/15.jpeg"
               alt="Location Map"
               width={600}
               height={400}
@@ -109,7 +110,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="text-center py-10 bg-white">
+      {/* 🤝 Social Media Connect */}
+      <section className="text-center py-10 bg-slate-100">
         <h3 className="text-3xl font-bold text-gray-800 mb-4">Connect With Us</h3>
         <div className="flex justify-center gap-6">
           <a href="https://facebook.com/BalayGoalsPH" target="_blank" rel="noopener noreferrer">
@@ -124,6 +126,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 🦶 Footer */}
       <footer className="bg-indigo-600 text-white text-center py-6">
         <p>&copy; 2025 BalayGoals PH. All rights reserved. | <span className="text-sm">SEO by BalayTech</span></p>
       </footer>
