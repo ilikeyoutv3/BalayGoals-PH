@@ -48,10 +48,20 @@ export default function Home() {
           >
             <CardContent className="p-6">
               <h2 className="text-2xl font-semibold text-indigo-700 mb-2">Homes in {location}</h2>
-              <p className="text-gray-700">Explore beautiful, affordable homes in {location} with modern amenities and great communities.</p>
+              <p className="text-gray-700">
+                Explore beautiful, affordable homes in {location} with modern amenities and great communities.
+              </p>
             </CardContent>
           </Card>
         ))}
+      </section>
+
+      {/* 🟣 Highlight Realestate Section */}
+      <section className="text-center py-16 bg-gradient-to-br from-realestate-light via-realestate to-realestate-dark text-white">
+        <h2 className="text-4xl font-bold mb-4 text-realestate-dark drop-shadow-md">Welcome to Real Estate Investment That Grows</h2>
+        <p className="max-w-2xl mx-auto text-lg text-white/90">
+          At BalayGoals PH, we don't just build homes — we build futures. Explore preselling investments designed for growth, comfort, and smart living.
+        </p>
       </section>
 
       {/* 🌟 Featured Condo Project */}
@@ -73,7 +83,9 @@ export default function Home() {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-gray-800">Downtowne Premier Residences</h3>
               <p className="text-gray-700">📍 V. Mapa Street, Bajada, Davao City</p>
-              <p className="text-gray-600">Own a unit in the newest condo development in the heart of Davao!</p>
+              <p className="text-gray-600">
+                Own a unit in the newest condo development in the heart of Davao!
+              </p>
               <ul className="list-disc list-inside text-gray-700">
                 <li><strong>₱9,000/month</strong> equity</li>
                 <li><strong>₱10,000.00</strong> reservation fee</li>
@@ -88,7 +100,9 @@ export default function Home() {
               </ul>
               <div className="mt-4">
                 <p className="font-semibold text-indigo-700">📞 0965-330-1739</p>
-                <p className="text-gray-700">📧 <a href="mailto:dejosnuria@gmail.com" className="underline">dejosnuria@gmail.com</a></p>
+                <p className="text-gray-700">
+                  📧 <a href="mailto:dejosnuria@gmail.com" className="underline">dejosnuria@gmail.com</a>
+                </p>
               </div>
               <Button className="mt-4 bg-indigo-600 hover:bg-indigo-700 text-white">Reserve Now</Button>
             </div>
