@@ -18,7 +18,7 @@ export default function Home() {
       {/* 🎯 Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center text-center text-white">
         <Image
-          src="/images/hero-real-estate.jpg"
+          src="/images/12.jpeg"
           alt="BalayGoals Background"
           layout="fill"
           objectFit="cover"
