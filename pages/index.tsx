@@ -1,10 +1,11 @@
 import React from 'react';
+import '../styles/globals.css';
 import Head from 'next/head';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Instagram, Facebook, Twitter } from 'lucide-react';
 import Image from 'next/image';
-import '../styles/globals.css';
+
 
 export default function Home() {
   return (
@@ -15,6 +16,16 @@ export default function Home() {
         <meta name="keywords" content="real estate Philippines, BalayGoals, buy house PH, condo, property for sale PH, rent house" />
         <meta name="author" content="BalayGoals PH" />
       </Head>
+
+      {/* 🚀 Optional Navbar */}
+      <nav className="bg-white/50 backdrop-blur-md shadow-sm py-4 px-6 flex justify-between items-center sticky top-0 z-50">
+        <h1 className="text-xl font-bold text-indigo-700">BalayGoals PH</h1>
+        <div className="space-x-4">
+          <a href="#listings" className="text-gray-700 hover:text-indigo-600">Listings</a>
+          <a href="#invest" className="text-gray-700 hover:text-indigo-600">Invest</a>
+          <a href="#contact" className="text-gray-700 hover:text-indigo-600">Contact</a>
+        </div>
+      </nav>
 
       {/* 🎯 Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center text-center text-white">
@@ -41,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* 🏙️ Cities Section */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 p-10 bg-gradient-to-r from-indigo-100 via-sky-100 to-white">
+      <section id="listings" className="grid grid-cols-1 md:grid-cols-3 gap-6 p-10 bg-gradient-to-r from-indigo-100 via-sky-100 to-white">
         {['Metro Manila', 'Cebu City', 'Davao'].map((location) => (
           <Card
             key={location}
@@ -57,16 +68,16 @@ export default function Home() {
         ))}
       </section>
 
-      {/* 🟣 Highlight Realestate Section */}
+      {/* 🌇 Real Estate Highlight Section */}
       <section className="text-center py-16 bg-gradient-to-br from-realestate-light via-realestate to-realestate-dark text-white">
-        <h2 className="text-4xl font-bold mb-4 text-realestate-dark drop-shadow-md">Welcome to Real Estate Investment That Grows</h2>
+        <h2 className="text-4xl font-bold mb-4 drop-shadow-md">Welcome to Real Estate Investment That Grows</h2>
         <p className="max-w-2xl mx-auto text-lg text-white/90">
           At BalayGoals PH, we don't just build homes — we build futures. Explore preselling investments designed for growth, comfort, and smart living.
         </p>
       </section>
 
       {/* 🌟 Featured Condo Project */}
-      <section className="py-16 bg-gradient-to-br from-indigo-100 via-sky-200 to-blue-100 px-4 md:px-16">
+      <section id="invest" className="py-16 bg-gradient-to-br from-indigo-100 via-sky-200 to-blue-100 px-4 md:px-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-indigo-700 mb-10">
             🎉 Inviting Investors! – Preselling Stage 🎉
@@ -128,8 +139,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🌐 Social Section */}
-      <section className="text-center py-10 bg-slate-100">
+      {/* 🌐 Social Media Section */}
+      <section id="contact" className="text-center py-10 bg-slate-100">
         <h3 className="text-3xl font-bold text-gray-800 mb-4">Connect With Us</h3>
         <div className="flex justify-center gap-6">
           <a href="https://facebook.com/BalayGoalsPH" target="_blank" rel="noopener noreferrer">
