@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/globals.css';
 import Head from 'next/head';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
