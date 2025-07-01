@@ -4,6 +4,7 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Instagram, Facebook, Twitter } from 'lucide-react';
 import Image from 'next/image';
+import '../styles/globals.css';
 
 export default function Home() {
   return (
