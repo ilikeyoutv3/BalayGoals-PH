@@ -110,14 +110,14 @@ export default function Home() {
 
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
             <Image
-              src="/images/downtowne-interior.jpg"
+              src="/images/15.jpeg"
               alt="Unit Interior"
               width={600}
               height={400}
               className="rounded-xl shadow-md object-cover w-full"
             />
             <Image
-              src="/images/downtowne-location-map.jpg"
+              src="/images/7.jpeg"
               alt="Location Map"
               width={600}
               height={400}
