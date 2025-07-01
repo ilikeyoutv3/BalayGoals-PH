@@ -59,7 +59,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <Image
-              src="/images/1.jpeg" // fixed typo from .jepg to .jpg
+              src="/images/4.jpeg" // fixed typo from .jepg to .jpg
               alt="Downtowne Premier Residences"
               width={600}
               height={400}
